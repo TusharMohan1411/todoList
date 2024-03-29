@@ -26,7 +26,6 @@ function todoMain() {
 
     var inputText = inputBox.value;
 
-
     if (inputText.length <= 0) {
         alert("Please add some task before adding.")
         return false;
@@ -37,6 +36,7 @@ function todoMain() {
         addTaskBtn.innerHTML = "Add";
         inputBox.value = "";
     } else {
+        image.remove();
 
         var newTaskli = document.createElement("li");
 
