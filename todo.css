@@ -148,7 +148,7 @@
      #todoList li {
          display: grid;
          gap: 0px;
-         grid-template-rows: 1fr 20px;
+         grid-template-rows: 1fr 15px;
          grid-template-columns: 1fr 1fr;
          padding: 0px;
          border-radius: 0;
@@ -160,11 +160,11 @@
      .todoTask {
          grid-area: 1/1/3/3;
          text-align: center;
-         background-color: rgb(161, 255, 227);
-         color: black;
+         background-color: rgb(191, 245, 233);
+         color: rgb(70, 70, 70);
          padding: 10px;
-         min-height: 50px;
-         border-radius: 5px;
+         min-height: 40px;
+         border-radius: 50px;
          border: 1px solid rgb(89, 207, 172);
          margin-bottom: 0px;
          display: grid;
@@ -175,13 +175,14 @@
          border: 0;
          display: grid;
          width: 100px;
-         padding: 10px 5px !important;
+         padding: 8px 5px !important;
          font-size: 18px;
          align-self: flex-end;
          margin-left: calc(100% - 100px);
          text-align: center;
          background-color: rgb(220, 201, 243);
          border-bottom-left-radius: 50px;
+         padding-left: 20px !important;
      }
      .removeTask {
          text-align: center;
@@ -189,7 +190,8 @@
          background-color: rgb(61, 8, 146);
          border-bottom-right-radius: 50px;
          width: 100px;
-         padding: 10px 5px !important;
+         padding: 8px 10px !important;
+         padding-right: 20px !important;
          font-size: 18px;
      }
      #date {
@@ -207,5 +209,8 @@
          float: right;
          font-size: 39px;
          margin-top: 5px;
+     }
+     .textStrike {
+         text-decoration: line-through;
      }
  }
