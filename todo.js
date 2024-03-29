@@ -63,7 +63,7 @@ function todoMain() {
         inputBox.value = "";
 
         newTaskP.addEventListener("click", () => {
-            newTaskP.classList.add("textStrike");
+            newTaskP.classList.toggle("textStrike");
         })
     }
 };

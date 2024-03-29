@@ -23,6 +23,49 @@
      background-color: var(--color4);
      height: 100%;
      width: 100vw;
+     display: flex;
+     border: 0;
+     background: linear-gradient(209deg, #601dc1, #2fd9c3);
+     background-size: 400% 400%;
+     -webkit-animation: AnimationName 7s ease infinite;
+     -moz-animation: AnimationName 7s ease infinite;
+     animation: AnimationName 7s ease infinite;
+ }
+ 
+ @-webkit-keyframes AnimationName {
+     0% {
+         background-position: 96% 0%
+     }
+     50% {
+         background-position: 5% 100%
+     }
+     100% {
+         background-position: 96% 0%
+     }
+ }
+ 
+ @-moz-keyframes AnimationName {
+     0% {
+         background-position: 96% 0%
+     }
+     50% {
+         background-position: 5% 100%
+     }
+     100% {
+         background-position: 96% 0%
+     }
+ }
+ 
+ @keyframes AnimationName {
+     0% {
+         background-position: 96% 0%
+     }
+     50% {
+         background-position: 5% 100%
+     }
+     100% {
+         background-position: 96% 0%
+     }
  }
  
  #todoContainer {
@@ -33,16 +76,17 @@
      height: fit-content;
      width: 500px;
      margin: auto;
-     border: 2px solid black;
      padding: 20px;
      gap: 20px;
      background-color: aliceblue;
      border-radius: 20px;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  }
  
  #todoContainer #todoHead {
      text-align: left;
      align-self: flex-start;
+     width: 100%;
  }
  
  #image img {
@@ -117,9 +161,18 @@
      cursor: pointer;
  }
  
+ .textStrike {
+     text-decoration: line-through;
+ }
+ 
+ #listIcon {
+     float: right;
+     font-size: 30px;
+ }
+ 
  @media (max-width:480px) {
      #todoMainCont {
-         background-color: aliceblue;
+         background: aliceblue !important;
          height: 100vh;
          width: 100vw;
          padding: 0px;
@@ -132,11 +185,13 @@
          border: 0;
          padding: 10px;
          height: fit-content;
+         box-shadow: none;
      }
      #todoContainer #todoHead {
          background-color: var(--color4);
          color: white;
          width: 100%;
+         text-align: left;
          padding: 15px 10px;
          height: fit-content;
          border-radius: 10px;
@@ -209,8 +264,5 @@
          float: right;
          font-size: 39px;
          margin-top: 5px;
-     }
-     .textStrike {
-         text-decoration: line-through;
      }
  }
