@@ -40,12 +40,6 @@
      border-radius: 20px;
  }
  
- #listIcon {
-     float: right;
-     font-size: 30px;
-     margin-top: 3px;
- }
- 
  #todoContainer #todoHead {
      text-align: left;
      align-self: flex-start;
@@ -53,6 +47,10 @@
  
  #image img {
      width: 300px;
+ }
+ 
+ #image {
+     text-align: center;
  }
  
  #todoContainer #inputCont {
@@ -64,16 +62,16 @@
  #todoContainer #inputCont button {
      border-radius: 10px;
      border: 0;
-     width: 15%;
+     width: 20%;
      background-color: #43077d;
      color: white;
-     font-size: 12px;
+     font-size: 17px;
      cursor: pointer;
  }
  
  #todoContainer #inputCont input {
      width: 85%;
-     font-size: 12px;
+     font-size: 17px;
      padding: 10px 10px;
      border: 1px solid #766186;
      border-radius: 10px;
@@ -168,8 +166,6 @@
          min-height: 50px;
          border-radius: 5px;
          border: 1px solid black;
-         /* border-bottom: 0; */
-         /* margin: 0; */
          margin-bottom: 5px;
          display: grid;
          align-items: center;
@@ -208,5 +204,10 @@
          bottom: 15px;
          text-align: center;
          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+     }
+     #listIcon {
+         float: right;
+         font-size: 40px;
+         margin-top: 5px;
      }
  }

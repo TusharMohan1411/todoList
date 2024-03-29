@@ -2,6 +2,7 @@ var addTaskBtn = document.querySelector("#addTaskBtn");
 var inputBox = document.querySelector("#inputBox");
 var todoList = document.querySelector("#todoList");
 const today = document.querySelector("#today");
+const image = document.querySelector("#image");
 var edittodothis;
 
 const date = new Date();
