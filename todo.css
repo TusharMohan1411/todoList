@@ -2,7 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: "Montserrat", sans-serif;
+     font-family: sans-serif;
  }
  
  body,
@@ -23,7 +23,6 @@
      background-color: var(--color4);
      height: 100%;
      width: 100vw;
-     padding-top: 30px;
  }
  
  #todoContainer {
@@ -41,15 +40,24 @@
      border-radius: 20px;
  }
  
+ #listIcon {
+     float: right;
+     font-size: 30px;
+     margin-top: 3px;
+ }
+ 
  #todoContainer #todoHead {
      text-align: left;
      align-self: flex-start;
  }
  
+ #image img {
+     width: 300px;
+ }
+ 
  #todoContainer #inputCont {
      display: flex;
      gap: 10px;
-     font-size: 20px;
      width: 100%;
  }
  
@@ -59,22 +67,22 @@
      width: 15%;
      background-color: #43077d;
      color: white;
-     font-size: 20px;
+     font-size: 12px;
      cursor: pointer;
  }
  
  #todoContainer #inputCont input {
      width: 85%;
-     font-size: 20px;
+     font-size: 12px;
      padding: 10px 10px;
      border: 1px solid #766186;
      border-radius: 10px;
-     /* font-family: "Montserrat Alternates", sans-serif; */
+     font-family: sans-serif;
  }
  
  #todoItemsCont {
      width: 100%;
-     font-size: 20px;
+     font-size: 15px;
  }
  
  #todoList {
@@ -90,6 +98,7 @@
      border-radius: 10px;
      padding: 10px;
      color: white;
+     font-family: sans-serif;
  }
  
  #todoList p {
@@ -115,12 +124,11 @@
          width: 100vh;
          border-radius: 0;
          border: 0;
-         justify-content: flex-start;
-         padding-top: 30px;
+         padding: 10px;
          height: fit-content;
      }
      #todoMainCont {
-         background-color: var(--color4);
+         background-color: aliceblue;
          height: 100vh;
          width: 100vw;
          padding: 0px;
@@ -136,7 +144,7 @@
          align-items: center;
      }
      #todoContainer #todoHead h1 {
-         font-size: 40px;
+         font-size: 30px;
      }
      #todoList li {
          display: grid;
