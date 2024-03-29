@@ -22,6 +22,7 @@ const editTodo = (e) => {
     }
 }
 
+
 function todoMain() {
 
     var inputText = inputBox.value;
@@ -60,6 +61,10 @@ function todoMain() {
         todoList.appendChild(newTaskli);
 
         inputBox.value = "";
+
+        newTaskP.addEventListener("click", () => {
+            newTaskP.classList.add("textStrike");
+        })
     }
 };
 
