@@ -57,6 +57,7 @@
      display: flex;
      gap: 10px;
      width: 100%;
+     margin-top: 15px;
  }
  
  #todoContainer #inputCont button {
@@ -117,7 +118,7 @@
      cursor: pointer;
  }
  
- @media (max-width:360px) {
+ @media (max-width:480px) {
      #todoContainer {
          width: 100vh;
          border-radius: 0;
@@ -147,9 +148,8 @@
      #todoList li {
          display: grid;
          gap: 5px;
-         grid-template-rows: 2fr 1.5fr;
+         grid-template-rows: 1fr 20px;
          grid-template-columns: 1fr 1fr;
-         justify-content: space-between;
          padding: 0px;
          border-radius: 0;
          color: white;
@@ -159,38 +159,36 @@
      }
      .todoTask {
          grid-area: 1/1/3/3;
-         text-align: center;
+         /* text-align: center; */
          background-color: aliceblue;
          color: black;
          padding: 10px;
-         min-height: 50px;
-         border-radius: 5px;
-         border: 1px solid black;
-         margin-bottom: 5px;
+         min-height: 40px;
+         /* border-radius: 5px; */
+         border: 0.5px solid rgb(203, 255, 248);
+         background-color: rgb(203, 255, 248);
+         margin-bottom: 0px;
          display: grid;
          align-items: center;
      }
      .editTask {
          border: 0;
          display: grid;
-         width: 90%;
+         width: 100px;
          padding: 10px 5px !important;
          font-size: 18px;
-         margin: auto;
-         align-items: center;
+         align-self: flex-end;
+         margin-left: calc(100% - 100px);
          text-align: center;
          background-color: rgb(220, 201, 243);
-         border-radius: 50px;
+         border-bottom-left-radius: 50px;
      }
      .removeTask {
          text-align: center;
          display: grid;
-         align-items: center;
          background-color: rgb(61, 8, 146);
-         border-radius: 50px;
-         width: 70%;
-         margin: auto;
-         width: 90%;
+         border-bottom-right-radius: 50px;
+         width: 100px;
          padding: 10px 5px !important;
          font-size: 18px;
      }
